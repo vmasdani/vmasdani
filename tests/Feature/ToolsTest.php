@@ -19,6 +19,19 @@ it('renders each tool page', function (string $tool) {
     'uuid',
     'timestamp',
     'qr-code',
+    'background-remover',
+    'image-base64',
+    'image-compressor',
+    'image-converter',
+    'exif-metadata',
+    'background-blur',
+    'ocr',
+    'face-blur',
+    'barcode-scanner',
+    'license-plate',
+    'pdf-merge',
+    'pdf-split',
+    'images-to-pdf',
 ]);
 
 it('renders the tools landing page', function () {

@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
+import { triggerDownload } from '@/lib/download';
 import { QR_ERROR_LEVELS, qrPngDataUrl, qrSvg, type QrErrorCorrection } from '@/lib/qr-code';
 import { DownloadSimpleIcon } from '@phosphor-icons/react';
 import { useMemo, useState } from 'react';
@@ -146,15 +147,4 @@ export default function QrCodeTool() {
             </div>
         </ToolPage>
     );
-}
-
-function triggerDownload(filename: string, href: string): void {
-    const anchor = document.createElement('a');
-
-    anchor.href = href;
-    anchor.download = filename;
-
-    document.body.appendChild(anchor);
-    anchor.click();
-    anchor.remove();
 }

@@ -30,6 +30,18 @@ class Tools
             'timestamp',
             'qr-code',
             'background-remover',
+            'image-base64',
+            'image-compressor',
+            'image-converter',
+            'exif-metadata',
+            'background-blur',
+            'ocr',
+            'face-blur',
+            'barcode-scanner',
+            'license-plate',
+            'pdf-merge',
+            'pdf-split',
+            'images-to-pdf',
         ];
     }
 

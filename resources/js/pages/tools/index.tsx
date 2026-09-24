@@ -17,19 +17,22 @@ export default function ToolsIndex() {
         <SiteLayout wide>
             <Seo
                 title="Utilities"
-                description="Free browser-based network and security utilities: ping, speed test, port scanner, DNS lookup, IP check and password strength. No sign-up, nothing stored."
+                description="Free browser-based network, image and on-device AI utilities: ping, speed test, port scanner, DNS, IP check, background removal, OCR, barcode scanning and more. No sign-up, nothing stored."
                 jsonLd={{
                     '@context': 'https://schema.org',
                     '@type': 'CollectionPage',
                     name: 'Utilities',
-                    description: 'Free browser-based network and security utilities.',
+                    description: 'Free browser-based network, image and on-device AI utilities.',
                 }}
             />
 
             <div className="space-y-8">
                 <div className="space-y-2">
                     <h1 className="text-3xl font-semibold tracking-tight">Utilities</h1>
-                    <p className="text-muted-foreground">A growing set of small network tools that run on the server. No sign-up, nothing stored.</p>
+                    <p className="text-muted-foreground">
+                        A growing set of small tools. Network probes run on the server; image and AI tools run entirely in your browser. No sign-up,
+                        nothing stored.
+                    </p>
                 </div>
 
                 <div className="relative">

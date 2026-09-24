@@ -1,0 +1,1 @@
+function e(t){if(t<=0)return"0 B";const n=["B","KB","MB","GB"],o=Math.min(Math.floor(Math.log(t)/Math.log(1024)),n.length-1);return`${(t/1024**o).toFixed(o===0?0:1)} ${n[o]}`}function r(t,n){return t<=0||n>=t?0:Math.min(100,Math.round((1-n/t)*100))}export{e as f,r as s};
