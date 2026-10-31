@@ -33,3 +33,5 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+/micro
+/.claude/settings.local.json

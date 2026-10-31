@@ -19,7 +19,7 @@ TESSDATA="$DEST/tessdata"
 LANGS="${LANGS:-eng ind}"
 
 if [[ ! -f "$JS_PKG" || ! -f "$CORE_PKG" ]]; then
-    echo "error: tesseract.js / tesseract.js-core are not installed; run npm install first." >&2
+    echo "error: tesseract.js / tesseract.js-core are not installed; run bun install first." >&2
     exit 1
 fi
 

@@ -1,0 +1,4 @@
+# Run package.json scripts and bin shims (vite, vitest, eslint, ...) on the
+# Bun runtime instead of Node, even when they declare a node shebang.
+[run]
+bun = true

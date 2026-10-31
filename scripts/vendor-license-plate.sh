@@ -21,7 +21,7 @@ ORT_DEST="$DEST/ort"
 MODEL_URL="${MODEL_URL:-https://huggingface.co/onnx-community/yolos-small-finetuned-license-plate-detection-ONNX/resolve/main/onnx/model_quantized.onnx}"
 
 if [[ ! -f "$ORT_PKG" ]]; then
-    echo "error: onnxruntime-web is not installed; run npm install first." >&2
+    echo "error: onnxruntime-web is not installed; run bun install first." >&2
     exit 1
 fi
 

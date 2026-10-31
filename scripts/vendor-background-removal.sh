@@ -11,7 +11,7 @@ PKG_JSON="$ROOT/node_modules/@imgly/background-removal/package.json"
 DEST="$ROOT/public/background-removal"
 
 if [[ ! -f "$PKG_JSON" ]]; then
-    echo "error: @imgly/background-removal is not installed; run npm install first." >&2
+    echo "error: @imgly/background-removal is not installed; run bun install first." >&2
     exit 1
 fi
 

@@ -43,7 +43,7 @@ fi
 # bundling.
 MODEL_DIRS=(background-removal barcode-scanner ocr face-blur license-plate)
 
-npm run build
+bun run build
 
 # Mirror the built public assets into public_html before packaging.
 rm -rf public_html

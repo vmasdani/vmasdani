@@ -13,7 +13,7 @@ DEST="$ROOT/public/face-blur"
 MODEL_URL="https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/1/blaze_face_short_range.tflite"
 
 if [[ ! -f "$PKG" || ! -d "$WASM_SRC" ]]; then
-    echo "error: @mediapipe/tasks-vision is not installed; run npm install first." >&2
+    echo "error: @mediapipe/tasks-vision is not installed; run bun install first." >&2
     exit 1
 fi
 

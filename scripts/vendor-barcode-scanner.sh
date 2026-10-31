@@ -11,7 +11,7 @@ SRC="$ROOT/node_modules/zxing-wasm/dist/reader/zxing_reader.wasm"
 DEST="$ROOT/public/barcode-scanner"
 
 if [[ ! -f "$PKG" || ! -f "$SRC" ]]; then
-    echo "error: zxing-wasm is not installed; run npm install first." >&2
+    echo "error: zxing-wasm is not installed; run bun install first." >&2
     exit 1
 fi
 
