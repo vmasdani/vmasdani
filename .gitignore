@@ -13,15 +13,11 @@
 /bootstrap/ssr
 /node_modules
 /public/background-removal
-/public_html/background-removal
 /public/barcode-scanner
-/public_html/barcode-scanner
 /public/ocr
-/public_html/ocr
 /public/face-blur
-/public_html/face-blur
 /public/license-plate
-/public_html/license-plate
+/public_html
 /public/build
 /public/hot
 /public/storage

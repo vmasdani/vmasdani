@@ -7,10 +7,10 @@ set -euo pipefail
 # and its root cannot be changed to point at Laravel's public/ directory.
 # build.sh therefore mirrors public/ -> public_html/ and packages the repo
 # (minus the exclusions below) into ../vmasdani.zip, which is what gets
-# uploaded. public_html is regenerated on every build and IS committed to git
-# as the deploy artifact, so any source change that touches public assets
-# shows up there as deleted+re-added build hashes. Do not delete or "clean
-# up" public_html and do not point Laravel's docroot at it locally.
+# uploaded. public_html is regenerated on every build and is gitignored: it
+# only needs to exist in the working tree when the zip is created. Do not
+# remove public_html from the zip and do not point Laravel's docroot at it
+# locally.
 
 # Ask whether to bundle the on-device model assets. They are large (~270 MB:
 # background-removal ~138 MB, license-plate ~69 MB, OCR ~45 MB, face-blur
